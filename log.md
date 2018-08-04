@@ -19,3 +19,16 @@ One of the challenges I face usually is working with software or stacks that I d
 
 **Thoughts:** Spent most of the time debugging why the bot was not able to respond. Was stuck with ‘not_authed’ error for a long time when trying to reply. Finally found the problem after almost an hour. But got to dig deeper and understand better about the app platform itself in the process. 
 Earlier, I was trying to build a workflow involving the bot which was less text and more action/command oriented. Now, planning to take it step by step and trying to build a more simple conversational style since it involves less of exploring slack APIs and more interesting logic pieces. Want to get a v1 of the workflow by tomorrow that let’s a user ‘register’ with the challenge, and ‘update’ progress each day. Post that, will add non-user initiated things like reminders, fine and streak announcements. 
+
+### Missed: August 3, 2018
+
+### Day 3: August 4, 2018
+
+**Today's Progress**: Bot now responds to ‘help’ private message and gives a bunch of interactive options like ‘Register’, ‘Peek into pot’, ‘Post my progress’. Also got a ngrok + serverless-offline (serverless plugin) setup to work to cut down on development cycle time significantly
+
+**Notes**: Struggled with 3 things today. 
+* The time to deploy was just too much (about 20 seconds to test every each code change). Found a serverless-offline plugin which basically simulates the API gateway and AWS Lambda to an extent. Since Slack needs to hit these urls, used ngrok to tunnel through a public url. 
+* Was unable to trigger the message handler upon dm or public channel message. Turned out to be misinterpretation of the API on my part. Had thought that event permissions  like ‘message.im’ and ‘message.channels’ are event keys as well. The key is just ‘message’. Once I hooked that up, it worked as expected.
+* Was unable to responds with attachments. Dug deeper into serverless-slack code and found that the message object passed bot.reply or other methods is converted into a query string and that meant values themselves should be converted to JSON upfront. Did that in my code and got that working.
+Overall, still getting acquainted with some quirks here and there. But time spent on getting to know some knew stuff should be useful. But should focus on functionality tomorrow.
+
