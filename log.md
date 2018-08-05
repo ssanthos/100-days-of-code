@@ -32,3 +32,14 @@ Earlier, I was trying to build a workflow involving the bot which was less text 
 * Was unable to responds with attachments. Dug deeper into serverless-slack code and found that the message object passed bot.reply or other methods is converted into a query string and that meant values themselves should be converted to JSON upfront. Did that in my code and got that working.
 Overall, still getting acquainted with some quirks here and there. But time spent on getting to know some knew stuff should be useful. But should focus on functionality tomorrow.
 
+### Day 4: August 5, 2018
+
+**Today’s Progress**: Got click on actions to call callback handler. Made some progress on the register sequence.
+
+**Notes**: 
+* Spent about 30 mins debugging why clicking an action button wasn’t calling my registered handler. After some hair-pulling, the issue turned out to be the `serverless-offline` plugin when the request uses `application/x-form-url-encoded` params rather than JSON. Solution : Screw offline plugin. Too much down the rabbit hole. Back to pure `serverless deploy.` SLS_DEBUG=1 helps a lot when trying to understand such issues
+* Was thinking of storing data per user since I thought serverless-slack was exposing a pure key/value store. But it seems a little unconventional. The `get` seems to be a lookup by key, but the `save` seems to be saving all data (not per key/record). Highly unlikely the underlying `DynamoDB` works this way, so maybe a restriction on `serverless-slack` package. Will dig deeper.
+* Found a cool library https://github.com/wanasit/chrono to parse dates typed out in a chat by user (not adhering to any formats). Yet to try it out well.
+
+Making slow progress. Trying new stuff definitely comes with overhead when things don’t work as expected. Should get better at doing course correction in time.
+
