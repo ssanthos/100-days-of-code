@@ -43,3 +43,11 @@ Overall, still getting acquainted with some quirks here and there. But time spen
 
 Making slow progress. Trying new stuff definitely comes with overhead when things don’t work as expected. Should get better at doing course correction in time.
 
+### Day 5: August 6, 2018
+
+**Today’s Progress**: Explored `botkit` (https://github.com/howdyai/botkit), which is a much more solid bot framework than `serverless-slack`. Setup a new bot based on botkit. Still going through some documentation and sample code.
+
+**Notes**: `serverless-slack` was a nice way to understand how to use `serverless` to build infrastructure-less apps. But one critical aspect it lacks when it comes to building a bot is any help with conversation management. This is where `botkit` is supposed to shine since it’s API is built to mainly enable bot conversations. Also includes plugin/middleware for NLP. I want to find out how fast I’m able to implement using `botkit` compared to `serverless-slack`.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
