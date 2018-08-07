@@ -51,3 +51,10 @@ Making slow progress. Trying new stuff definitely comes with overhead when thing
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
 
+### Day 6: August 7, 2018
+**Today’s Progress**: Added a flow to register a user via a conversation with the bot. Currently just stores a nick name and favourite color.
+
+**Notes**: Botkit is a awesome! I started with a sample provided by them and modified it to so that you can say ‘register’ to the bot and it asks you 2 questions one after the other (name and favourite color) and stores them under user data. Can be queried later. Also added an ‘erase’ trigger to help with iterating. It’s amazing how easy botkit has made all this stuff. I just read some 30 mins of docs that’s was pretty much it, I could then focus directly on conversations I wanted to build. Tomorrow, planning to add flow to collect user’s 100daysofcode repo url and oauth flow so that the bot can update the progress log by itself.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
