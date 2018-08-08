@@ -58,3 +58,10 @@ Making slow progress. Trying new stuff definitely comes with overhead when thing
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
 
+### Day 7: August 8, 2018
+**Today’s Progress**: Added more questions to the flow to register user with the challenge. Also explored ways to store dates and date ranges using moment. and moment-range library.
+
+**Notes**: Bot now asks date you started the challenge and dates you missed in between and github url. Moment.js is excellent for working with dates. To keep track of date ranges, I’m using a library called moment-range. What I need is to keep track of every day progress etc., so this library will help query and iterate over ranges etc. 
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
