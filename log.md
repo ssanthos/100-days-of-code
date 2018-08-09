@@ -65,3 +65,13 @@ Making slow progress. Trying new stuff definitely comes with overhead when thing
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
 
+### Day 8: August 9, 2018
+**Today’s Progress**: Learnt about ES6 generators and how to use them to implement async flows with less syntax.
+
+**Notes**: Was trying to write bot conversation code better. Currently every question asked involves one level on nested callback. Yesterday, I followed a pattern of defining each question in the conversation as it’s own function based on one of the examples. Today, I came across this comment - [Stopping a conversation immediately after saying something silences previous message · Issue #149 · howdyai/botkit · GitHub](https://github.com/howdyai/botkit/issues/149#issuecomment-298939419)
+It links to code that uses ES6 generators as ‘stateful conversations’. https://github.com/taxigy/slackbot-starter/
+From there, I went off tangentially learning about ES6 generators. I’d always thought I’d never have to learn them since async/await would make them unnecessary. But I found this excellent 4-part blog series explaining the concept really well enough to make it interesting. [The Basics Of ES6 Generators](https://davidwalsh.name/es6-generators) . The author is David Walsh, his posts on promises are awesome as well.
+After this, tried implementing one of my bot conversation flow using generators. Not working yet.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
