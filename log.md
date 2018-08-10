@@ -75,3 +75,14 @@ After this, tried implementing one of my bot conversation flow using generators.
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
 
+### Day 9: August 10, 2018
+**Today’s Progress**: Implemented register conversation flow using es6 generator rather than callbacks. 
+Tried out Typescript.
+
+**Notes**: Conversation using generator is a thing of beauty! The mechanism seems pretty powerful. Wrote the sequence of sequence and bot messages in a single generator function which isn’t concerned with bot or conversation objects. It only yields objects with details about the questions. I isolated everything else completely into a runner function. Lot of boilerplate can be isolated into the runner this way, while keeping it generic. Writing any conversation then becomes just a matter of yielding a bunch of strings and objects with the runner taking care of validating, transforming, aborting, repeating questions, aborting and all that stuff. 
+All this is super cool, but still yet to see what the advantages of using generators over async/await might be.
+
+Came across Typescript searching for something around validation, so decided to try it out. Was able to try compiling TS to JS and see what the transpilation looks like for basic classes and interfaces. Planning to move to using Typescript over the next couple of days
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
