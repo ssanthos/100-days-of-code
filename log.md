@@ -86,3 +86,12 @@ Came across Typescript searching for something around validation, so decided to 
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
 
+### Day 10: August 12, 2018
+**Today’s Progress**: Implemented multiple conversations using the same generator mechanism. Started working on github oauth flow.
+
+**Notes**: Implemented ‘test’ and ‘erase’ commands that use storage apis and added options to do that from the generator. 
+The github oauth part is a bit tricky to work into the conversation. So far, the botkit based conversations I’ve built are purely back and forth with a clear end of conversation. To implement the github oauth flow. I need to ask the user to open a url in the browser and provide a callback URI. With the callback, I’ll get the token, but don’t have a way yet to bring that into the current conversation the bot is having the user. Will need to see if botkit apis make this easier. If there isn’t a good way to do that, I can prompt the user to tell the bot that the authorization is done.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
+
