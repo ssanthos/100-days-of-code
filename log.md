@@ -86,6 +86,8 @@ Came across Typescript searching for something around validation, so decided to 
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
 
+### Missed: August 11, 2018
+
 ### Day 10: August 12, 2018
 **Today’s Progress**: Implemented multiple conversations using the same generator mechanism. Started working on github oauth flow.
 
@@ -94,4 +96,11 @@ The github oauth part is a bit tricky to work into the conversation. So far, the
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
 
+### Missed: August 13, 2018
 
+### Day 11: August 14, 2018
+**Today’s Progress**: Got the github oauth flow working. Need to integrate that with the current conversation.
+
+**Notes**: Github oauth flow works like this - open the authorize url in the user’s browser. Will need the client id for this step. I’m setting the scope to ‘public_repo’ since the 100daysofcode repo will be public. Once the user authorizes, the browser will post the a `code` to the callback uri. I make a request from the app to github with my client id and secret to get an `access_token` for the user. There is also a parameter called `state` we can use to prevent CSRF. To generate CSRF tokens, I used a package called `csrf`.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
