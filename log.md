@@ -104,3 +104,10 @@ The github oauth part is a bit tricky to work into the conversation. So far, the
 **Notes**: Github oauth flow works like this - open the authorize url in the user’s browser. Will need the client id for this step. I’m setting the scope to ‘public_repo’ since the 100daysofcode repo will be public. Once the user authorizes, the browser will post the a `code` to the callback uri. I make a request from the app to github with my client id and secret to get an `access_token` for the user. There is also a parameter called `state` we can use to prevent CSRF. To generate CSRF tokens, I used a package called `csrf`.
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
+### Day 12: August 15, 2018
+**Today’s Progress**: Integrated github auth flow into the register conversation
+
+**Notes**: While generator functions and the concept is cool, writing a generator executor is a lot of boilerplate. Should probably use a library like `co` which helps to reduce a lot of that. But based on my experience with it so far, `async/await` seems a better suited option. `async/await` is really a special case of generators but easier to write. Will think about generators when there is something else possibly more suited. Moving to `async/await` tomorrow.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
