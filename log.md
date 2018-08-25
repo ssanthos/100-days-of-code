@@ -111,3 +111,20 @@ The github oauth part is a bit tricky to work into the conversation. So far, the
 **Notes**: While generator functions and the concept is cool, writing a generator executor is a lot of boilerplate. Should probably use a library like `co` which helps to reduce a lot of that. But based on my experience with it so far, `async/await` seems a better suited option. `async/await` is really a special case of generators but easier to write. Will think about generators when there is something else possibly more suited. Moving to `async/await` tomorrow.
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
+### Missed: August 16, 2018
+### Missed: August 17, 2018
+### Missed: August 18, 2018
+### Missed: August 19, 2018
+### Missed: August 20, 2018
+### Missed: August 21, 2018
+### Missed: August 22, 2018
+### Missed: August 23, 2018
+### Missed: August 24, 2018
+
+### Day 13: August 25, 2018
+**Today’s Progress**: Moved to async/await from generators. Also got reacquainted with the code.
+
+**Notes**: `async/await` is a special case of generators. And frankly, generators are too much pain for very little gain. Also, I’ll be making more feature wise progress over the next couple of days rather than trying to figure out ways to write better code. A sense of completion is long overdue.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
