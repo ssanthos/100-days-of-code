@@ -128,3 +128,9 @@ The github oauth part is a bit tricky to work into the conversation. So far, the
 **Notes**: `async/await` is a special case of generators. And frankly, generators are too much pain for very little gain. Also, I’ll be making more feature wise progress over the next couple of days rather than trying to figure out ways to write better code. A sense of completion is long overdue.
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
+### Day 14: August 26, 2018
+**Today’s Progress**: Implementing register flow with `async/await`. Reached until github auth again. Added code to saving all register inputs so that I don’t have to provide from scratch every time I iterate. It’s conversational too.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
