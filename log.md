@@ -134,3 +134,17 @@ The github oauth part is a bit tricky to work into the conversation. So far, the
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
 
+### Day 15: August 27, 2018
+**Today’s Progress**: Added code to pull user’s github repos. Also figured out how to attach VS Code debugger to a nodemon process.
+
+**Notes**: https://github.com/octokit/rest.js is the official Node.js client for github API. Once I obtain the oauth token, I pass it to the library and make all github REST API calls via this. 
+Also, found this - https://github.com/bdspen/nodemon_vscode to setup nodemon + VS code debugger. Very handy since you’d want auto-restart but also need to put breakpoints at times. 
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
+### Day 16: August 28, 2018
+**Today’s Progress**: Solved an issue with conversation ending prematurely
+
+**Notes**: Was stuck with an issue where while making an API call to github, the conversation ends. Dug deeper and found that unless there is something in the message queue, the conversation automatically ends. Tried a couple of workarounds but finally found a different way - creating a new conversation post API call. Since I’m not relying on data stored on the conversation itself, it’s workable.
+
+**Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
