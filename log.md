@@ -148,3 +148,29 @@ Also, found this - https://github.com/bdspen/nodemon_vscode to setup nodemon + V
 **Notes**: Was stuck with an issue where while making an API call to github, the conversation ends. Dug deeper and found that unless there is something in the message queue, the conversation automatically ends. Tried a couple of workarounds but finally found a different way - creating a new conversation post API call. Since I’m not relying on data stored on the conversation itself, it’s workable.
 
 **Link to work**: [GitHub - ssanthos/rick-botkit](https://github.com/ssanthos/rick-botkit)
+
+### Missed: August 29, 2018
+### Missed: August 30, 2018
+### Missed: August 31, 2018
+### Missed: September 1, 2018
+### Missed: September 2, 2018
+### Missed: September 3, 2018
+### Missed: September 4, 2018
+### Missed: September 5, 2018
+### Missed: September 6, 2018
+### Missed: September 7, 2018
+### Missed: September 8, 2018
+### Missed: September 9, 2018
+
+# Day 17: September 10, 2018
+*Today’s Progress*: Stopped working on the bot.
+/New project/ : An image manipulation API on Google Cloud Endpoints + App Engine/K8 Engine
+
+*Notes*: The bot has me bored enough so I decided to chuck it. On to a new project.
+Idea is to build an API for image manipulation (resize, rotate, filters etc.) on a minimal and decoupled setup. 
+Part 1 - Learn setting up a standard REST API, that takes care of authentication, routing, parameter validation and response, decoupled from any backend logic. Planning to use [Cloud Endpoints](https://cloud.google.com/endpoints/) and [OpenAPI](https://github.com/OAI/OpenAPI-Specification) to setup and manage the gateway.
+Part 2 - Setup the backend app on App Engine and later Kubernetes Engine. Compare advantages/disadvantages in terms of setting up, maintenance, scaling, costs etc.
+Part 3 - Create a Web based dashboard enabling a user to upload, transform, save and share the generated images. This app should be complete client side and only use the APIs.
+Part 4 - Use [Cloud Functions](https://cloud.google.com/functions/) to run image manipulation jobs. Could explore other options too.
+
+What I did today on this - Read up about Cloud Endpoints, tried setting up and deploying a sample app to app engine and a sample API scheme to Cloud Endpoints. Also read up on App Engine’s Flexible environment.
