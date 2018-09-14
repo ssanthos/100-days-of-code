@@ -162,7 +162,7 @@ Also, found this - https://github.com/bdspen/nodemon_vscode to setup nodemon + V
 ### Missed: September 8, 2018
 ### Missed: September 9, 2018
 
-# Day 17: September 10, 2018
+### Day 17: September 10, 2018
 *Today’s Progress*: Stopped working on the bot.
 /New project/ : An image manipulation API on Google Cloud Endpoints + App Engine/K8 Engine
 
@@ -174,3 +174,20 @@ Part 3 - Create a Web based dashboard enabling a user to upload, transform, save
 Part 4 - Use [Cloud Functions](https://cloud.google.com/functions/) to run image manipulation jobs. Could explore other options too.
 
 What I did today on this - Read up about Cloud Endpoints, tried setting up and deploying a sample app to app engine and a sample API scheme to Cloud Endpoints. Also read up on App Engine’s Flexible environment.
+
+### Missed: September 11, 2018
+### Missed: September 12, 2018
+
+### Day 18: September 13, 2018
+**Today’s Progress**: Read a few articles on how to build REST APIs. Started a basic Udacity course. 
+
+**Notes**: Want to understand some keys parts of API design and how to build them. Read a few articles about what libraries can help. Wanted to get some more basics that I might be missing so started on this Udacity course - [Udacity](https://classroom.udacity.com/courses/ud388)
+
+**Link to work**: Not much code apart from a Dockerfile and compose file to run an example in the course, so haven’t committed.
+
+### Day 19: September 14, 2018
+**Today’s Progress**: Finished the Udacity course material.
+
+**Notes**:  The Udacity course didn’t help too much. It was too basic. Went through it anyway. Want to start building backend APIs for image manipulation app just like a normal app from tomorrow.
+
+**Link to work**: No code since I was just going through videos of the code material.
